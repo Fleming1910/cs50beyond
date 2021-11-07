@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>
+            test page
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #paragraph2:hover {
+                background-color: bisque;
+            }
+
+            .text:hover {
+                background-color: blue;
+            }
+
+            .text > h1 {
+                color: red;
+            }
+            
+            .container {
+                border-style: double;
+                display: flex; 
+                flex-wrap: wrap;
+            }
+
+            .container > div {
+                border-style: dashed;
+                background-color: green;
+                font-size: 20px;
+                margin: 20px;
+                padding: 20px;
+                width: 200px;
+            }
+
+            .container > #double {
+                width: 600px;
+            }
+
+            .grid {
+                background-color: green;
+                display: grid;
+                padding: 20px;
+                grid-column-gap: 20px;
+                grid-row-gap: 10px;
+                grid-template-columns: 100px auto auto 100px;
+            }
+
+            .grid-item {
+                background-color: white;
+                font-size: 20px;
+                padding: 20px;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>
+            This is the main heading. 
+        </h1>
+        <div>
+            <uo>
+                <li><a href="#paragraph1">1</a></li>
+                <li><a href="#paragraph2">2</a></li>
+            </uo>
+            <p id="paragraph1">
+                Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. 
+                Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. 
+                Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. 
+                Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. 
+                Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. 
+                Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. 
+                Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. 
+                Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. 
+                Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. 
+                Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. Paragraph 1. 
+            </p>
+            <div class="text">
+                <div>
+                    <h1>heading for text 1</h1>
+                </div>
+            </div>
+            <div class="text">
+                text 2
+                
+            </div>
+            <div class="text">
+                <h1>heading for text 3</h1>
+            </div>
+        </div>
+        <div>
+            <input name="names" list="namelist" placeholder="Name">
+            <datalist id="namelist">
+                <option value="Felix">
+                <option value="Fleming">
+                <option value="Huetter">
+            </datalist>
+        </div>
+        <div id="email">
+            <form action="www.google.de">
+                <input name="email" placeholder="enter your email" pattern="...@...\.com">
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+        <div class="container">
+            <div>1AAAAAA AAAAAAA A AAAAAAAAA AAAAAAA</div>
+            <div>2AAAAAAA AAAAAAA  A AAAAAAA  AAAAAAAA</div>
+            <div>3AAAAAA AAAAAAA AAAAAAAA AA AAAA  AAA</div>
+            <div>4AAAAAA AAAAAA AAAAAAAAA   AAAAAAAAA</div>
+            <div id="double">5AAAAAA AAAAA AAA AAAAA  AAAAAA AAAAA</div>
+            <div>6AAAAAA AAAAA AAAAAAAAAAA AAA  AAAAA</div>
+            <div>7AAAAAA AAAAA AAAA AAA AAAA AAAAAA AA</div>
+            <div>8AAAAAA AAAAAAAAAA   AAAA AAAAAAAAAA</div>
+            <div>9AAAAAA AAAAAAAAA AA A A AAA AAAAA AAA</div>
+            <div>10AAAAAA AAAAAA  AAAAA AAAA AAAAAA AAA</div>
+            <div>11AAAAAA AAAAAAAAAAA AAAAAAA AAAAAA</div>
+            <div>12AAAAAA AAAAA AAAAAA AAA AAA A  AAAAAA</div>
+            <div>13AAAAAA AAA AAAAAAAAA AAAAA AAAAAAA</div>
+        </div>
+        <p id="paragraph2" contenteditable="true">
+            Paragraph 2. Paragraph 2. Paragraph 2. Paragraph 2. Paragraph 2. 
+            Paragraph 2. Paragraph 2. Paragraph 2. Paragraph 2. Paragraph 2. 
+            Paragraph 2. Paragraph 2. Paragraph 2. Paragraph 2. Paragraph 2. 
+            Paragraph 2. Paragraph 2. Paragraph 2. Paragraph 2. Paragraph 2. 
+            Paragraph 2. Paragraph 2. Paragraph 2. Paragraph 2. Paragraph 2. 
+            Paragraph 2. Paragraph 2. Paragraph 2. Paragraph 2. Paragraph 2. 
+        </p>
+        <div class="grid">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+            <div class="grid-item">10</div>
+            <div class="grid-item">11</div>
+            <div class="grid-item">12</div>
+        </div>
+    </body>
+</html>
